@@ -28,7 +28,7 @@ public class TipoIglesiaDAO {
     ArrayList<TipoIglesia> lista = null;
     public ArrayList<TipoIglesia> listarIglesia(){
         lista = new ArrayList();
-        sql="SELECT * FORM tipo_iglesia";
+        sql="SELECT * FROM tipo_iglesia";
         try{
             cx=Conexion.getConex();
             st=cx.createStatement();
@@ -46,4 +46,7 @@ public class TipoIglesiaDAO {
         
         return lista;
     }
+
+
+    
 }
